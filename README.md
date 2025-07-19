@@ -1,12 +1,44 @@
-# React + Vite
+# 🛒 React Product Checkout App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, responsive e-commerce checkout flow built using **React** and **Material UI**, with support for:
+- Product listing
+- User detail collection
+- Form validation
+- Payment confirmation
+- Dark/light theme switching
+- Dynamic routing with React Router
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🛍️ Product cards with image, description & price
+- 💳 Payment flow with user details and card info
+- 🌗 Toggle between Light and Dark themes
+- ✅ Form validation before proceeding to card details
+- 🔁 Retry flow on failed payments
+- 🧾 Payment summary on success page
+- ⚙️ Responsive design using MUI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Folder Structure
+
+```bash
+src/
+│
+├── components/           # Reusable UI components
+│   ├── Header.jsx
+│   └── ProductCard.jsx
+│   └── CardDetails.jsx
+│   └── UserForm.jsx
+│
+├── pages/                # Route-specific pages
+│   ├── ProductPage.jsx
+│   ├── PaymentPage.jsx
+│   ├── SuccessPage.jsx
+│   └── FailurePage.jsx
+│
+├── App.jsx               # Main app with routing
+└── main.jsx              # Entry point
+└── ThemeContext.jsx      # Theme switching
